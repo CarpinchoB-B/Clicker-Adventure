@@ -1,0 +1,79 @@
+#Shop
+{
+    height: 100%;
+    width: 33%;
+}
+
+#HeadSpan
+{
+    font-size: 50px;
+    margin-left: 30%;
+}
+
+.ShopElement
+{
+    width: 100%;
+    height: 80px;
+    margin-top: 2%;
+    background-color: red;
+    display: flex;
+}
+
+#FirstBuy
+{
+    height: 65px;
+    width: 15%;
+    margin-top: 7.5px;
+    margin-left: 40px;
+    background-color: lime;
+}
+
+.SecondBlockForBuy
+{
+    height: 65px;
+    width: 65%;
+    margin-top: 7.5px;
+    margin-left: 10px;
+    background-color: lime;
+    display: flex;
+}
+
+.TextBlockForBuy
+{
+    height: 65px;
+    width: 50%;
+    background-color: orange;
+}
+
+.Name
+{
+    font-size: larger;
+}
+
+.Price
+{
+    margin-top: 20px;
+    font-size: larger;
+}
+
+.ImageBlockForBuy
+{
+    height: 65px;
+    width: 50%;
+    background-color: aqua;
+}
+
+.Level
+{
+    height: 65px;
+    width: 40%;
+    background-color: lime
+}
+
+.Buy
+{
+    height: 65px;
+    width: 40%;
+    margin-left: 28.5px;
+    background-color: lime;
+}

@@ -1,0 +1,45 @@
+body,html
+{
+    height: 100%;
+    width: 100%;
+    margin: 0px;
+    overflow: hidden;
+}
+
+#MenuSection
+{
+    margin-top: 10%;
+    margin-left: 5%;
+}
+
+.MenuButtons
+{
+    background: none;
+    border: none;
+    font-size: 40px;
+    position: absolute;
+}
+
+#Play
+{
+    margin-top: 0%;
+    position: absolute;
+}
+
+#Continue
+{
+    margin-top: 5%;
+    position: absolute;
+}
+
+#Load
+{
+    margin-top: 10%;
+    position: absolute;
+}
+
+#Exit
+{
+    margin-top: 15%;
+    position: absolute;
+}
