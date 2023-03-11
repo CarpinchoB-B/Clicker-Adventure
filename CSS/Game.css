@@ -2,6 +2,8 @@
 {
     height: 100%;
     width: 33%;
+    background-image: url("../backgrounds/day.jpg");
+    background-size: 100% 100%;
 }
 
 #GameHere

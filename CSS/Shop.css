@@ -24,14 +24,14 @@
     height: 65px;
     width: 15%;
     margin-top: 7.5px;
-    margin-left: 40px;
+    margin-left: 10px;
     background-color: lime;
 }
 
 .SecondBlockForBuy
 {
     height: 65px;
-    width: 65%;
+    width: 55%;
     margin-top: 7.5px;
     margin-left: 10px;
     background-color: lime;
@@ -42,38 +42,29 @@
 {
     height: 65px;
     width: 50%;
-    background-color: orange;
 }
 
 .Name
 {
+    margin-top: 10px;
+    margin-left: 10px;
     font-size: larger;
 }
 
 .Price
 {
-    margin-top: 20px;
+    margin-top: 5px;
     font-size: larger;
+    text-align: center;
+    vertical-align: top;
 }
 
 .ImageBlockForBuy
 {
     height: 65px;
-    width: 50%;
+    width: 20%;
+    margin-top: 7.5px;
+    margin-left: 15px;
     background-color: aqua;
 }
 
-.Level
-{
-    height: 65px;
-    width: 40%;
-    background-color: lime
-}
-
-.Buy
-{
-    height: 65px;
-    width: 40%;
-    margin-left: 28.5px;
-    background-color: lime;
-}
