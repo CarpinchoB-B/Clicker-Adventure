@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <script type="module" src="./JS/game.js"></script>
@@ -10,100 +11,154 @@
     <link rel="stylesheet" href="./CSS/Shop.css">
     <title>Левел</title>
 </head>
+
 <body>
     <section id="Shop">
         <span id="HeadSpan">Shop</span>
+        <div id="Ability1Tip" class="abilityDmgTip">Press Space to use Ability</div>
+        <div id="Ability2Tip" class="abilityIncrDmgTip">Press F to use Ability</div>
         <div class="ShopElement">
-            <img id="FirstBuy">
+            <img class="Item" src="upgrades/3.webp">
+            <div class="SecondBlockForBuy">
+                <div class="TextBlockForBuy">
+                    <div class="Name">Weak Sword</div>
+                </div>
+            </div>
+            <div id="FirstBuy" class="ImageBlockForBuy">
+                <div class="upgradeTip"></div>
+                <img class="upgradeTipArrow" src="icons/arrow.png">
+                <div class="upgradeTipText">Click here to upgrade dmg</div>
+                <section class="section_buy">
+                    <img class="Coin" src="icons/coin.png">
+                    <div id="WeakSword" class="Price">10</div>
+                </section>
+            </div>
+        </div>
+        <div class="ShopElement">
+            <img class="Item" src="upgrades/2.webp">
             <div class="SecondBlockForBuy">
                 <div class="TextBlockForBuy">
                     <div class="Name">Sword</div>
                 </div>
             </div>
-            <div class="ImageBlockForBuy">
-                <div class="Price">Buy</div>
-                <div class="Price">10</div>
+            <div id="SecondBuy" class="ImageBlockForBuy">
+                <section class="section_buy">
+                    <img class="Coin" src="icons/coin.png">
+                    <div id="Sword" class="Price">50</div>
+                </section>
             </div>
         </div>
         <div class="ShopElement">
-            <img id="FirstBuy">
+            <img class="Item" src="upgrades/1.webp">
             <div class="SecondBlockForBuy">
                 <div class="TextBlockForBuy">
-                    <div class="Name">Sword</div>
+                    <div class="Name">Strong Sword</div>
                 </div>
             </div>
-            <div class="ImageBlockForBuy">
-                <div class="Price">Buy</div>
-                <div class="Price">10</div>
+            <div id="ThirdBuy" class="ImageBlockForBuy">
+                <section class="section_buy">
+                    <img class="Coin" src="icons/coin.png">
+                    <div id="StrongSword" class="Price">300</div>
+                </section>
             </div>
         </div>
         <div class="ShopElement">
-            <img id="FirstBuy">
+            <img class="Item" src="upgrades/4.webp">
             <div class="SecondBlockForBuy">
                 <div class="TextBlockForBuy">
-                    <div class="Name">Sword</div>
+                    <div class="Name">Weak Axe</div>
                 </div>
             </div>
-            <div class="ImageBlockForBuy">
-                <div class="Price">Buy</div>
-                <div class="Price">10</div>
+            <div id="FourthBuy" class="ImageBlockForBuy">
+                <section class="section_buy">
+                    <img class="Coin" src="icons/coin.png">
+                    <div id="WeakAxe" class="Price">1000</div>
+                </section>
             </div>
         </div>
         <div class="ShopElement">
-            <img id="FirstBuy">
+            <img class="Item" src="upgrades/5.webp">
             <div class="SecondBlockForBuy">
                 <div class="TextBlockForBuy">
-                    <div class="Name">Sword</div>
+                    <div class="Name">Weak Shield</div>
                 </div>
             </div>
-            <div class="ImageBlockForBuy">
-                <div class="Price">Buy</div>
-                <div class="Price">10</div>
+            <div id="FifthBuy" class="ImageBlockForBuy">
+                <section class="section_buy">
+                    <img class="Coin" src="icons/coin.png">
+                    <div id="WeakShield" class="Price">7500</div>
+                </section>
             </div>
         </div>
         <div class="ShopElement">
-            <img id="FirstBuy">
+            <img class="Item" src="upgrades/6.webp">
             <div class="SecondBlockForBuy">
                 <div class="TextBlockForBuy">
-                    <div class="Name">Sword</div>
+                    <div class="Name">Strong Shield</div>
                 </div>
             </div>
-            <div class="ImageBlockForBuy">
-                <div class="Price">Buy</div>
-                <div class="Price">10</div>
+            <div id="SixthBuy" class="ImageBlockForBuy">
+                <section class="section_buy">
+                    <img class="Coin" src="icons/coin.png">
+                    <div id="StrongShield" class="Price">50000</div>
+                </section>
             </div>
         </div>
         <div class="ShopElement">
-            <img id="FirstBuy">
+            <img class="Item" src="upgrades/7.webp">
             <div class="SecondBlockForBuy">
                 <div class="TextBlockForBuy">
-                    <div class="Name">Sword</div>
+                    <div class="Name">Strong Axe</div>
                 </div>
             </div>
-            <div class="ImageBlockForBuy">
-                <div class="Price">Buy</div>
-                <div class="Price">10</div>
+            <div id="SeventhBuy" class="ImageBlockForBuy">
+                <section class="section_buy">
+                    <img class="Coin" src="icons/coin.png">
+                    <div id="StrongAxe" class="Price">300000</div>
+                </section>
             </div>
         </div>
-        <div class="ShopElement">
-            <img id="FirstBuy">
-            <div class="SecondBlockForBuy">
-                <div class="TextBlockForBuy">
-                    <div class="Name">Sword</div>
-                </div>
-            </div>
-            <div class="ImageBlockForBuy">
-                <div class="Price">Buy</div>
-                <div class="Price">10</div>
-            </div>
-        </div>
+        <img class="Money" src="icons/coin.png">
+        <div id="money">0</div>
     </section>
     <section id="Game">
-        <span id="GameHere">CLICK!!!!!!!</span>
-        <input id="TestDamage" type="text" value="100" style="border: none">
+        <div id="GameTip"></div>
+        <img id="GameArrowTip" src="icons/arrow.png">
+        <div id="GameTextTip"> Click here to deal damage</div>
+
+        <section class="enemy">
+            <img id="enemy_img" src="enemy/1.webp"></div>
+            <input id="TestDamage" type="text" value="100" style="border: none; text-align: center;">
+        </section>
     </section>
     <section id="LevelOptions">
         <span id="Options">Options</span>
+        <section>
+            <section class="Sound">
+                <img class="options_arrow" src="icons/arrow.png">
+                <div class="options_tip_text">sound off/on</div>
+                <img id="soundoff" class="options_icon" src="icons/soundoff.png">
+                <img id="soundon" class="options_icon" src="icons/sound.png">
+            </section>
+
+            <section class="Music">
+                <img class="options_arrow" src="icons/arrow.png">
+                <div class="options_tip_text">music off/on</div>
+                <img id="musicoff" class="options_icon" src="icons/musicoff.webp">
+                <img id="musicon" class="options_icon" src="icons/music.png">
+            </section>
+
+            <section class="Theme">
+                <img class="options_arrow" src="icons/arrow.png">
+                <div class="options_tip_text">dark light theme</div>
+                <img id="day" class="options_icon" src="icons/day.png">
+                <img id="night" class="options_icon" src="icons/night.png">
+            </section>
+            <section class="Tip">
+                <img id="tip" class="options_icon" src="icons/tip.png">
+            </section>
+        </section>
     </section>
 </body>
+
 </html>
