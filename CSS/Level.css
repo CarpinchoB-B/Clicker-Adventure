@@ -1,9 +1,17 @@
+@font-face {
+    font-family: "Font";
+    src: url("../fonts/font.ttf") format("truetype");
+    font-style: normal;
+    font-weight: normal;
+}
+
 body,html
 {
     height: 100%;
     width: 100%;
     margin: 0px;
     overflow: hidden;
+    font-family: "Font";
 }
 
 body

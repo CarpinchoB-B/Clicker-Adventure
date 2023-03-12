@@ -1,20 +1,7 @@
-#Options
-{
-    margin-top: 2%;
-    margin-left: 85%;
-    position: absolute;
-}
-
 .OptionsButtons
 {
     border: 1px solid black;
     border-radius: 90px;
     width: 90px;
     height: 90px;
-}
-
-#OptionsButton
-{
-    margin-left: 40%;
-    position: absolute;
 }

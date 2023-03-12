@@ -2,46 +2,53 @@
 {
     height: 100%;
     width: 33%;
+    text-align: center;
+    background-color: rgb(159, 167, 212);
 }
 
 #HeadSpan
 {
     font-size: 50px;
-    margin-left: 30%;
 }
 
 .ShopElement
 {
     width: 100%;
     height: 80px;
-    margin-top: 2%;
-    background-color: red;
+    margin-top: 1%;
+    background-color: rgb(96, 96, 251);
     display: flex;
+}
+
+.Item{
+    height: 60px;
+    width: 60px;
+    margin-top: 7.5px;
+    margin-left: 10px;
+    background-color: rgb(144, 144, 228);
 }
 
 #FirstBuy
 {
-    height: 65px;
-    width: 15%;
-    margin-top: 7.5px;
-    margin-left: 10px;
-    background-color: lime;
+
 }
 
 .SecondBlockForBuy
 {
-    height: 65px;
-    width: 55%;
+    height: 60px;
+    width: 430px;
     margin-top: 7.5px;
     margin-left: 10px;
-    background-color: lime;
+    background-color: rgb(144, 144, 228);
     display: flex;
+    align-items: center;
 }
 
 .TextBlockForBuy
 {
-    height: 65px;
-    width: 50%;
+    margin-top: 15px;
+    height: 60px;
+    width: 350px;
 }
 
 .Name
@@ -53,7 +60,6 @@
 
 .Price
 {
-    margin-top: 5px;
     font-size: larger;
     text-align: center;
     vertical-align: top;
@@ -61,10 +67,76 @@
 
 .ImageBlockForBuy
 {
-    height: 65px;
-    width: 20%;
+    height: 60px;
+    width: 130px;
     margin-top: 7.5px;
-    margin-left: 15px;
-    background-color: aqua;
+    margin-left: 10px;
+    background-color: rgb(144, 144, 228);
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
+.Coin{
+    text-align: center;
+    height: 24px;
+    width: 24px;
+}
+
+.section_buy{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+
+.abilityDmgTip{
+    position: absolute;
+    bottom: 100px;
+    left: 50px;
+    font-size: 40px;
+    font-weight: 1000;
+    color: green;
+}
+
+.abilityIncrDmgTip{
+    position: absolute;
+    bottom: 200px;
+    left: 50px;
+    font-size: 40px;
+    font-weight: 1000;
+    color: green;
+}
+
+.upgradeTip{
+    position: absolute;
+    border: 5px red solid;
+    height: 60px;
+    width: 130px;
+    color: green;
+}
+
+.upgradeTipArrow{
+    position: absolute;
+    margin-left: 200px;
+    width: 60px;
+    height: 60px;
+}
+
+.upgradeTipText{
+    position: absolute;
+    margin-left: 700px;
+    margin-top: 30px;
+    height: 60px;
+    font-size: 30px;
+    font-weight: 1000;
+}
+
+.Money{
+    margin-top: 20px;
+    text-align: center;
+    height: 48px;
+    width: 48px;
+}

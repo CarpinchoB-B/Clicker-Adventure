@@ -2,10 +2,85 @@
 {
     height: 100%;
     width: 34%;
+    background-color: rgb(159, 167, 212);
 }
 
 #Options
 {
     font-size: 50px;
     margin-left: 35%;
+}
+
+.options_icon{
+    width: 60px;
+    height: 60px;
+    margin-left: 15px;
+    margin-top: 15px;
+}
+
+#soundoff
+{
+    background-color: rgb(159, 167, 212);
+    z-index: 100;
+}
+
+#soundon
+{
+    z-index: 100;
+    background-color:  rgb(113, 182, 113);
+}
+
+#musicoff
+{
+    z-index: 100;
+    background-color:  rgb(113, 182, 113);
+}
+
+#musicon
+{
+    z-index: 100;
+    background-color: rgb(159, 167, 212);
+}
+
+#day
+{
+    z-index: 100;
+    background-color:  rgb(113, 182, 113);
+}
+
+#night
+{
+    z-index: 100;
+    background-color: rgb(159, 167, 212);
+}
+
+#tip{
+    z-index: 100;
+    background-color:  rgb(113, 182, 113);
+    position: absolute;
+    top: 0px;
+    right: 0px;
+}
+
+#options_tip_box{
+    border: 5px red solid;
+    position: absolute;
+    width: 150px;
+    height: 75px;
+}
+.options_arrow{
+    width: 60px;
+    height: 60px;
+    margin-top: 20px;
+    margin-left: 170px;
+    position: absolute;
+}
+
+.options_tip_text{
+    position: absolute;
+    margin-top: 20px;
+    margin-left: 240px;
+    font-size: 40px;
+    font-weight: 1000;
+    color: green;
 }
