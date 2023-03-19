@@ -10,6 +10,10 @@ let clicked = false;
 let isSoundOn = true;
 let isTipOn = 0;
 let isAbility = true;
+let increasedMoney = 0;
+let increase = [1,5,25,125,625,3125,15625];
+let enemyHealth = [100,300,600,1800,5200,15600,46180,138540,415620,1246860];
+let healthCurrentEnemy = enemyHealth[0];
 
 const fightArea = document.getElementById("Game");
 const testDamage = document.getElementById("TestDamage");
@@ -26,6 +30,8 @@ const tip = document.getElementById("tip");
 const money = document.getElementById('money');
 const enemyForeground = document.getElementById('enemy_img');
 
+let myMoney = money.textContent;
+
 const Enemies = new Array();
 Enemies.push('enemy/1.webp');
 Enemies.push('enemy/2.webp');
@@ -40,9 +46,9 @@ Enemies.push('enemy/10.webp');
 
 function IncreaseMoney()
 {
-    let res = money.textContent;
-    res = Number(res) + 1;
-    money.textContent = res;
+    myMoney = money.textContent;
+    myMoney = Number(myMoney) + 1 + increasedMoney;
+    money.textContent = myMoney;
     console.log("I am here");
 }
 
@@ -188,11 +194,18 @@ for(let i = 0;i < shopBuy.length;i++)
     shopBuy[i].addEventListener("click",()=>
     {
         let price = weapons[i].textContent;
-        price = Number(price) * 1.2;
-        weapons[i].textContent = parseInt(price,10);
-        if(isSoundOn)
+        if(myMoney >= Number(price))
         {
-            buy.play();
+            money.textContent = myMoney - price;
+            damage += i + 1;
+            console.log(money.textContent);
+            increasedMoney += increase[i];
+            price = Number(price) * 1.2;
+            weapons[i].textContent = parseInt(price,10);
+            if(isSoundOn)
+            {
+                buy.play();
+            }
         }
     });
 }
@@ -214,8 +227,9 @@ function DealDamage(damage)
                 enemyNumber = 0;
             }
             enemyNumber++;
+            healthCurrentEnemy = enemyHealth[enemyNumber];
             enemyForeground.src = Enemies[enemyNumber];
-            testDamage.value = "100";
+            testDamage.value = healthCurrentEnemy;
         }
         else
         {
